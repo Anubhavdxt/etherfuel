@@ -1,5 +1,5 @@
 {
-  "name": "anubhav-portfolio",
+  "name": "etherfuel-platform",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,8 @@
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typewriter-effect": "^2.19.0"
+    "ethers": "^5.5.4",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",

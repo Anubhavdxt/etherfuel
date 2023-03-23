@@ -1,29 +1,38 @@
-import HeaderMsg from "./HeaderMsg";
-import Navbar from "./Navbar";
+import Image from 'next/image';
+import Link from 'next/link';
+import HeaderMsg from './HeaderMsg';
+import Navbar from './Navbar';
 
 export default function Hero() {
   return (
-    <>
+    <div>
       <Navbar />
       <HeaderMsg />
-      <div className="p-12 flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center py-8 px-12">
         <h1 className="text-8xl text-center font-extrabold leading-normal">
-          my name is anubhav
-          <br />
-          <span className="font-bold">i&#39;m a front-end developer</span>
+          run your ev with etherfuel
         </h1>
-        <p className="font-bold text-4xl py-6 opacity-90">
-          i love coding web apps and developing user interfaces
+        <h2 className="font-bold text-7xl">
+          fuel your electric vehicle with crypto
+        </h2>
+        <p className="font-bold text-5xl py-6 opacity-90">
+          fuel your electric vehicle with crypto
         </p>
-        <button className="bg-secondary text-primary px-12 py-6 font-semibold text-2xl mt-5">
-          <a
-            href="/public/asset/anubhav-cv.pdf"
-            download
-          >
-            Download CV
-          </a>
+        <button className="bg-tertiary text-secondary px-12 py-6 font-semibold text-2xl mt-5">
+          <Link href="/login">Get Started</Link>
         </button>
       </div>
-    </>
+      <div className="py-8 flex items-center justify-center flex-col">
+        <p className="font-bold text-5xl mb-8 opacity-90">
+          Charge your EVs effortlesly leave your concerns to EtherFuel
+        </p>
+        <Image
+          src={'/Background.svg'}
+          width={1920}
+          height={900}
+          alt="Charging station"
+        />
+      </div>
+    </div>
   );
 }

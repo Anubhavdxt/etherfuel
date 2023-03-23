@@ -1,21 +1,21 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Footer from "../components/Footer";
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="bg-primary text-secondary">
+    <div className=" text-secondary bg-gradient-to-r from-primary/75 via-slate-50 to-tertiary/70">
       <Head>
-        <title>Anubhav | Front-end Developer</title>
+        <title>EtherFuel | Fuel your EV with Crypto</title>
         <meta
           name="description"
-          content="Anubhav Dixit Personal Portfolio"
+          content="EtherFuel User Platform"
         />
         <link
           rel="icon"
-          href="/favicon.ico"
+          href="/favicon.svg"
         />
       </Head>
       <Hero />
