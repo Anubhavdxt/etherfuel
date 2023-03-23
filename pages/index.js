@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import TechUsed from '../components/TechUsed';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         />
       </Head>
       <Hero />
+      <TechUsed />
       {/* <Projects /> */}
       <Footer />
     </div>
