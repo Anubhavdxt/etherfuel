@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import contractAbi from '../utils/contractABI.json';
+import styles from '/styles/Login.module.css';
 
 // Add the domain you will be minting
 const tld = '.etherfuel';
@@ -107,9 +108,9 @@ const Login = () => {
   };
 
   const renderNotConnectedContainer = () => (
-    <div className="connect-wallet-container">
+    <div className={styles.connect_wallet_container}>
       <button
-        className="cta-button connect-wallet-button"
+        className={styles.connect_wallet_button}
         onClick={connectWallet}
       >
         Connect Wallet
@@ -119,27 +120,29 @@ const Login = () => {
 
   const renderInputForm = () => {
     return (
-      <div className="form-container">
-        <div className="first-row">
+      <div className={styles.form_container}>
+        <div className={styles.first_row}>
           <input
+            className={styles.input}
             type="text"
             value={domain}
             placeholder="domain"
             onChange={(e) => setDomain(e.target.value)}
           />
-          <p className="tld"> {tld} </p>
+          <p className={styles.tld}> {tld} </p>
         </div>
 
         <input
+          className={styles.input}
           type="text"
           value={record}
           placeholder="whats ur spyder power"
           onChange={(e) => setRecord(e.target.value)}
         />
 
-        <div className="button-container">
+        <div className={styles.button_container}>
           <button
-            className="cta-button mint-button"
+            className={styles.mint_button}
             onClick={mintDomain}
           >
             Mint
@@ -154,8 +157,8 @@ const Login = () => {
   }, []);
 
   return (
-    <div className="App">
-      <div className="container">
+    <div className={styles.App}>
+      <div className={styles.container}>
         {!currentAccount && renderNotConnectedContainer()}
         {currentAccount && renderInputForm()}
       </div>
