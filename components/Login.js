@@ -110,7 +110,7 @@ const Login = () => {
   const renderNotConnectedContainer = () => (
     <div className={styles.connect_wallet_container}>
       <button
-        className={styles.connect_wallet_button}
+        className="bg-tertiary text-secondary px-12 py-6 font-semibold text-2xl mt-5"
         onClick={connectWallet}
       >
         Connect Wallet
@@ -120,34 +120,35 @@ const Login = () => {
 
   const renderInputForm = () => {
     return (
-      <div className={styles.form_container}>
-        <div className={styles.first_row}>
+      <div className="flex flex-col items-center justify-center w-full">
+        <div className="flex relative mb-3 items-center w-full">
           <input
-            className={styles.input}
+            className="bg-tertiary text-secondary px-8 py-6 font-semibold text-2xl mt-5 w-96"
             type="text"
             value={domain}
-            placeholder="domain"
+            placeholder="Username"
             onChange={(e) => setDomain(e.target.value)}
           />
-          <p className={styles.tld}> {tld} </p>
+          <p className="text-secondary absolute text-2xl right-4 mt-6 font-semibold">
+            {' '}
+            {tld}{' '}
+          </p>
         </div>
 
         <input
-          className={styles.input}
+          className="bg-tertiary text-secondary px-8 py-6 font-semibold text-2xl mt-5 w-96"
           type="text"
           value={record}
-          placeholder="whats ur spyder power"
+          placeholder="EV Model, e.g. Tata Nexon EV"
           onChange={(e) => setRecord(e.target.value)}
         />
 
-        <div className={styles.button_container}>
-          <button
-            className={styles.mint_button}
-            onClick={mintDomain}
-          >
-            Mint
-          </button>
-        </div>
+        <button
+          className="bg-tertiary text-secondary px-12 py-6 font-semibold text-2xl mt-5"
+          onClick={mintDomain}
+        >
+          Mint
+        </button>
       </div>
     );
   };

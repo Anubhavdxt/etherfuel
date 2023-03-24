@@ -120,14 +120,6 @@
   width: 12px;
 }
 
-.form_container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .input {
   border: 0;
   border-radius: 12px;
@@ -148,27 +140,6 @@
 
 .input:focus {
   outline: none;
-}
-
-.first_row {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.tld {
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  /* left: -70px; */
-  right: 22px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 13px;
 }
 
 .mint_list {

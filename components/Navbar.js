@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link href="#about">about me</Link>
         </div> */}
         <div className="link">
-          <Link href="/smartContract">Smart Contract</Link>
+          <Link href="/login">get started</Link>
         </div>
       </div>
     </div>

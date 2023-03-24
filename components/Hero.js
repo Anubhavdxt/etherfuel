@@ -9,15 +9,17 @@ export default function Hero() {
       <Navbar />
       <HeaderMsg />
       <div className="flex flex-col items-center justify-center py-8 px-12">
-        <h1 className="text-8xl text-center font-extrabold leading-normal">
+        <h1 className="text-8xl text-center font-extrabold leading-normal mt-2">
           run your ev with etherfuel
         </h1>
-        <h2 className="font-bold text-7xl">
-          fuel your electric vehicle with crypto
-        </h2>
-        <p className="font-bold text-5xl py-6 opacity-90">
-          fuel your electric vehicle with crypto
-        </p>
+        <div className="h-60">
+          <h2 className="font-bold text-7xl mt-10">
+            fuel your electric vehicle with crypto
+          </h2>
+          {/* <p className="font-bold text-5xl py-6 opacity-90">
+            fuel your electric vehicle with crypto
+          </p> */}
+        </div>
         <button className="bg-tertiary text-secondary px-12 py-6 font-semibold text-2xl mt-5">
           <Link href="/login">Get Started</Link>
         </button>
